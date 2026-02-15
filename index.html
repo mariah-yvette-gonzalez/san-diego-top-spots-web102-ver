@@ -3,12 +3,38 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>San Diego Top Spots</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Write your markup here -->
+    <header>
+        <h1>San Diego Top Spots</h1>
+    </header>
 
-    <!-- Don't forget to add your <script> tag here -->
+    <section id="top-spots-container">
+        <!-- TABLE TO LIST OUT TOP SPOTS -->
+        <table>
+            <thead> <!-- thead = table header -->
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+
+            <tbody id="top-spots"> <!-- tbody = table body | data will be inserted here by jQuery in JS--> </tbody>
+        </table>
+
+        <div id="map-container">
+            
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery library -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuwrNBtTpE64iizNnDsVvgUz10uRjnRrI"></script> <!-- Google Maps API -->
+    <script src="main.js"></script>
 </body>
 
 </html>
