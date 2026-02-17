@@ -32,18 +32,18 @@
         </div>
     </section>
 
-    <script src="main.js"></script> <!-- main script -->
-
+    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery library -->
-
+    
     <script src="config.js"></script> <!-- config.js contains the API key, but is gitignored so it won't be shared publicly.-->
-
+    
     <script>
         var script = document.createElement('script');
         script.src = 'https://maps.googleapis.com/maps/api/js?key=' + CONFIG.GOOGLE_MAPS_API_KEY + '&libraries=geometry';
         document.head.appendChild(script);
-    </script> <!-- Dynamically load the Google Maps API script with the API key from config.js -->
+        </script> <!-- Dynamically load the Google Maps API script with the API key from config.js -->
 
+    <script src="main.js"></script> <!-- main script --> 
 </body>
 
 </html>
